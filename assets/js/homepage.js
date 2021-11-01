@@ -15,6 +15,15 @@
 // by having user as the parameter, we can use getUserRepos() with different usernames
 // i.e. getUserRepos('microsoft')
 
+// fetch ('https://blah')
+// .then(function(response){
+//     return response.json();
+// }) 
+// .then(function(whateveryounameit))
+// makeHTML(myjson);
+// or 
+// response.json().then(function(data)) {}
+
 var repoContainerEl = document.querySelector("#repos-container");
 var repoSearchTerm = document.querySelector("#repo-search-term");
 
@@ -37,6 +46,7 @@ var getUserRepos = function(user) {
     // note the below has no semi colon. chained to the end of .then method
      })
      .catch(function(error) {
+         console.log(error);
         // Notice this `.catch()` getting chained onto the end of the `.then()` method
         alert("Unable to connect to GitHub");
      });
