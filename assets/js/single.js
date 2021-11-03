@@ -98,3 +98,4 @@ var displayWarning = function(repo) {
 
 getRepoName();
 // HTTP headers allow the client and the server to pass additional information with an HTTP request or response.
+// & to seperate when using multiple parameters
